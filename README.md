@@ -1,7 +1,7 @@
 # 황윤지 포트폴리오
 
 ## 홈페이지 주소
-- https://hwangyunji.github.io/Portfolio/
+- https://hwangyunji.github.io/2025/
 
 ![main](https://user-images.githubusercontent.com/105402299/188520184-e5f9556c-00ec-48f8-bf47-bcd63b17b1d3.JPG)
 
