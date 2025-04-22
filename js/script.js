@@ -1,19 +1,4 @@
 $(document).ready(function () {
-  $('#fullpage').fullpage({
-    //options here
-    // responsiveWidth: 1000, // fullpage 해제 분기점
-    anchors: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-    menu: '#enu',
-    navigation: true,
-    navigationTooltips: ['HOME', 'PROFILE', 'WORK', 'CONTACT'],
-    navigationPosition: 'right',
-  });
-
-
-  // 메인에서 상단이동
-  $('#btnGoTop').click(function () {
-    $.fn.fullpage.moveTo(1, 1); // 이동하고싶은 페이지
-  });
 
 
   var typingBool = false;
