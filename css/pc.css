@@ -80,37 +80,27 @@ section {
     text-align: center;
   }
 
-  .skill {
-    display: inline-block;
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 줄바꿈 허용 (반응형 고려) */
+    gap: 30px; /* 도넛 사이 간격 */
     text-align: center;
-    margin: 20px;
+    margin: 40px auto;
   }
   
-  .donut {
-    width: 120px;
-    height: 120px;
-    transform: rotate(-90deg);
+  .skills img {
+    height: 60px;
+  }
+
+  .fade-img {
+    opacity: 0;
+    transform: translateY(20px); /* 아래에서 올라오는 효과 */
+    transition: all 0.8s ease;
   }
   
-  .donut-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.5;
-  }
-  
-  .donut-bar {
-    fill: none;
-    stroke: #5c8df6;
-    stroke-width: 3.5;
-    stroke-dasharray: 80 100; /* 나중에 JS로 채워질 값 */
-    stroke-linecap: round;
-    transition: stroke-dasharray 1s ease;
-  }
-  
-  .donut-text {
-    fill: #333;
-    font-size: 0.3em;
-    text-anchor: middle;
-    transform: rotate(90deg);
-    transform-origin: center;
+  /* 보여질 때 적용할 클래스 */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
   }
